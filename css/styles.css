@@ -38,6 +38,10 @@ button {
 	color: currentColor;
 }
 
+input {
+	font-family: inherit;
+}
+
 .body-style {
   font-family: 'Roboto', sans-serif;
   color: var(--text);
