@@ -520,16 +520,20 @@ input {
   margin-bottom: 16px;
 }
 
+.footer-social-container {
+  margin-right: 80px;
+}
+
 .footer-social {
   display: flex;
   gap: 16px;
 }
 
 .social-bg {
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social .team-list-social-link:hover,
 .footer-social .team-list-social-link:focus {
-  background: var(--success);
+  background-color: var(--success);
 }
