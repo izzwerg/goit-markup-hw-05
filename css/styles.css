@@ -641,9 +641,6 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal-close-button-logo {
   fill: var(--dark);
 }
 
@@ -660,6 +657,16 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  
 }
 
 /* .is-hidden {
