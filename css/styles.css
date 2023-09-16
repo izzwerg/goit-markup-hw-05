@@ -669,6 +669,10 @@ fieldset {
   
 }
 
+.modal-textarea {
+  resize: none;
+}
+
 /* .is-hidden {
   display: none;
 } */
