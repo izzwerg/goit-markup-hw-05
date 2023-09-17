@@ -219,6 +219,7 @@ fieldset {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -232,7 +233,6 @@ fieldset {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
   color: var(--white-background);
   font-weight: 500;
   font-size: 16px;
@@ -593,20 +593,17 @@ fieldset {
   background: var(--primary-brand);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: var(--pressed-state);
-}
-
-.subscribe-button-text {
   color: var(--white-background);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--pressed-state);
 }
 
 .subscribe-button-logo {
@@ -660,6 +657,7 @@ fieldset {
   flex-direction: column;
   gap: 8px;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .modal-label {
@@ -684,6 +682,29 @@ fieldset {
 
 .modal-textarea {
   resize: none;
+  height: 120px;
+}
+
+.modal-input::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-privacy {
+  display: flex;
+  color: var(--subtle-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+.modal-privacy-check {
+  margin-right: 8px;
+}
+
+.modal-privacy > a {
+  color: var(--primary-brand);
 }
 
 /* .is-hidden {
