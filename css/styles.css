@@ -642,6 +642,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   fill: var(--dark);
+  margin-bottom: 24px;
 }
 
 .modal-header {
@@ -651,6 +652,7 @@ fieldset {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .modal-form {
@@ -663,10 +665,21 @@ fieldset {
 .modal-label {
   display: flex;
   flex-direction: column;
+  color: var(--subtle-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  gap: 4px;
 }
 
 .modal-input {
-  
+  color: var(--dark);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
 }
 
 .modal-textarea {
