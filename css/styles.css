@@ -696,9 +696,13 @@ fieldset {
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 8px; */
   width: 100%;
   margin-bottom: 16px;
+}
+
+.modal-form-container {
+  margin-bottom: 8px;
 }
 
 .modal-label {
