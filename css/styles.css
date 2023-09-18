@@ -596,7 +596,6 @@ fieldset {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border-radius: 4px;
   background: var(--primary-brand);
   border: none;
@@ -606,10 +605,11 @@ fieldset {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04px;
+  letter-spacing: 0.04em;
   min-width: 165px;
   height: 40px;
   font-family: 'Roboto', sans-serif;
+  cursor: pointer;
 }
 
 .subscribe-button:hover,
@@ -619,6 +619,7 @@ fieldset {
 
 .subscribe-button-logo {
   fill: var(--white-background);
+  margin-left: 16px;
 }
 
 .backdrop {
