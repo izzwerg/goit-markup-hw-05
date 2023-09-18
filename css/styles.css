@@ -545,6 +545,18 @@ fieldset {
   background-color: var(--success);
 }
 
+.subscribe-container {
+}
+
+.subscribe-header {
+  color: var(--white-background);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
 .subscribe-form {
   display: flex;
   align-items: flex-end;
@@ -555,11 +567,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  color: var(--white-background);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .subscribe-input {
@@ -576,7 +583,7 @@ fieldset {
   border: 1px solid var(--white-background);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  max-height: 40px;
+  height: 40px;
 }
 
 .subscribe-input::placeholder {
@@ -584,7 +591,7 @@ fieldset {
 }
 
 .subscribe-button {
-  display: inline-flex;
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
@@ -599,6 +606,9 @@ fieldset {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04px;
+  min-width: 165px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .subscribe-button:hover,
