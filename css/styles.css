@@ -614,18 +614,22 @@ fieldset {
   position: fixed;
   inset: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(46, 47, 66, 0.4);
 }
 
 .modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
   padding: 24px;
   background-color: var(--modal-background);
   display: flex;
   flex-direction: column;
   border-radius: 4px;
+  min-height: 584px;
+  margin-bottom: auto;
 }
 
 .modal-close-button {
@@ -671,6 +675,15 @@ fieldset {
   line-height: 1.17;
   letter-spacing: 0.04em;
   gap: 4px;
+  fill: var(--dark);
+  position: relative;
+}
+
+.modal-input + svg {
+  position: absolute;
+  bottom: 11px;
+  left: 16px;
+  /* transform: translateY(-50%); */
 }
 
 .modal-input {
@@ -679,7 +692,19 @@ fieldset {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  padding: 11px 16px 11px 38px;
+  padding: 12px 16px 12px 38px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+}
+
+.modal-input:focus-within {
+  border: 1px solid var(--primary-brand);
+  outline: none;
+}
+
+.modal-input:focus-within + svg {
+  fill: var(--primary-brand);
 }
 
 .modal-textarea {
@@ -697,7 +722,7 @@ fieldset {
   color: var(--subtle-text);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 24px;
 }
@@ -710,6 +735,10 @@ fieldset {
   color: var(--primary-brand);
 }
 
-/* .is-hidden {
+.is-hidden {
   display: none;
-} */
+}
+
+.is-open {
+  display: flex;
+}
