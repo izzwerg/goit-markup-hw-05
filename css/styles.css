@@ -624,6 +624,7 @@ fieldset {
 
 .backdrop {
   position: fixed;
+  inset: 0;
   display: flex;
   background-color: rgba(46, 47, 66, 0.4);
   display: none;
@@ -676,8 +677,7 @@ fieldset {
 }
 
 .modal-close-button:hover,
-.modal-close-button:focus,
-.modal-close-button:active {
+.modal-close-button:focus {
   background-color: var(--pressed-state);
   fill: white;
   border: none;
