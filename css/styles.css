@@ -624,7 +624,6 @@ fieldset {
 
 .backdrop {
   position: fixed;
-  inset: 0;
   display: flex;
   background-color: rgba(46, 47, 66, 0.4);
   display: none;
