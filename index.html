@@ -603,7 +603,7 @@
             </div>
           </div>
           <div class="modal-form-container">
-            <label class="modal-label" for="user-mail"> Name </label>
+            <label class="modal-label" for="user-mail"> Email </label>
             <div class="modal-form-input">
               <input
                 class="modal-input"
@@ -616,32 +616,33 @@
               </svg>
             </div>
           </div>
-          <label class="modal-label" for="user-comment">
-            Comment
+          <div class="comment-container">
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-input modal-textarea"
               id="user-comment"
               name="user-comment"
               placeholder="Text input"
-              rows="7"
             ></textarea>
-          </label>
+          </div>
+          <div>
+            <label class="modal-privacy">
+              <input class="modal-privacy-check" type="checkbox" />
+              <span class="modal-privacy-checked">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
+              <span class="modal-privacy-non-checked">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-non-checked"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="" target="_blank"> Privacy Policy</a>
+            </label>
+          </div>
         </form>
-        <label class="modal-privacy">
-          <input class="modal-privacy-check" type="checkbox" />
-          <span class="modal-privacy-checked">
-            <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-checked"></use>
-            </svg>
-          </span>
-          <span class="modal-privacy-non-checked">
-            <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-non-checked"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the&nbsp;
-          <a href="" target="_blank"> Privacy Policy</a>
-        </label>
         <button class="hero-button" type="submit">Send</button>
       </div>
     </div>
