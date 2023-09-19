@@ -627,29 +627,26 @@
           </div>
           <div class="privacy-container">
             <input
-              class="visually-hidden"
+              class="privacy-input visually-hidden"
               type="checkbox"
               id="user-privacy"
               value="true"
               name="user-privacy"
             />
             <label class="modal-privacy" for="user-privacy">
+              <span class="modal-privacy-check">
+                <svg class="modal-privacy-check-logo" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the&nbsp;
               <a href="" target="_blank"> Privacy Policy</a>
             </label>
-            <span class="modal-privacy-checked">
-              <svg width="16" height="16">
-                <use href="./images/icons.svg#icon-checked"></use>
-              </svg>
-            </span>
-            <span class="modal-privacy-non-checked">
-              <svg width="16" height="16">
-                <use href="./images/icons.svg#icon-non-checked"></use>
-              </svg>
-            </span>
           </div>
+          <button class="hero-button" type="submit">
+            Send
+          </button>
         </form>
-        <button class="hero-button" type="submit">Send</button>
       </div>
     </div>
   </body>

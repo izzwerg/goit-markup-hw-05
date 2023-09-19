@@ -53,6 +53,7 @@ fieldset {
   font-family: 'Roboto', sans-serif;
   color: var(--text);
   background: var(--white-background);
+  width: 100%;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -697,7 +698,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 16px;
 }
 
 .modal-form-container {
@@ -713,7 +713,6 @@ fieldset {
   letter-spacing: 0.04em;
   margin-bottom: 4px;
   fill: var(--dark);
-  /* position: relative; */
 }
 
 .modal-form-input {
@@ -784,31 +783,37 @@ fieldset {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-bottom: 24px;
   position: relative;
   align-items: center;
   height: 16px;
   cursor: pointer;
 }
 
-.modal-privacy-non-checked {
-  fill: none;
-  stroke: rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
-  transform: translateY(2px);
-}
-
-.modal-privacy-checked {
-  position: absolute;
-  fill: var(--pressed-state);
-  stroke: var(--pressed-state);
-  display: none;
-  transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-privacy-check:checked + .modal-privacy-checked {
+.modal-privacy-check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
-  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.modal-privacy-check-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-input:checked + .modal-privacy  .modal-privacy-check {
+  background-color: var(--pressed-state);
+  border: none;
+  fill: var(--light);
 }
 
 .modal-privacy > a {
