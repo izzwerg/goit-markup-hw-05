@@ -773,6 +773,10 @@ fieldset {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.privacy-container {
+  
+}
+
 .modal-privacy {
   display: flex;
   color: var(--subtle-text);
