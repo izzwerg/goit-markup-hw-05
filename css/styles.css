@@ -816,7 +816,7 @@ fieldset {
   fill: var(--light);
 }
 
-.modal-privacy > a {
+.privacy-link {
   color: var(--primary-brand);
 }
 
